@@ -1,0 +1,6 @@
+# WebAppPrototypes
+Collection of small projects made in javascript, html, css...\
+## Use
+[FlowerJS](https://adam077x.github.io/WebAppPrototypes/FlowerJS) - Simple app that draws flower\
+[PaintApp](https://adam077x.github.io/WebAppPrototypes/PaintApp) - Basic drawing application\
+[MemoryGameJS](https://adam077x.github.io/WebAppPrototypes/MemoryGameJS) - Memory game where you have to memorize grid of squares
