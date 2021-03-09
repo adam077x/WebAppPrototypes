@@ -1,0 +1,22 @@
+{
+  "name": "VideoRecorderJS",
+  "version": "1.0.0",
+  "description": "This is simple video recorder",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Adam Heczko",
+  "license": "ISC",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^12.0.0",
+    "electron-forge": "^5.2.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "electron-prebuilt-compile": "^8.2.0",
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
