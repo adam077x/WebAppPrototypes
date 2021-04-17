@@ -5,3 +5,4 @@ Collection of small projects made in javascript, html, css...
 [PaintApp](https://adam077x.github.io/WebAppPrototypes/PaintApp) - Basic drawing application\
 [MemoryGameJS](https://adam077x.github.io/WebAppPrototypes/MemoryGameJS) - Memory game where you have to memorize grid of squares\
 [ParticlesJS](https://adam077x.github.io/WebAppPrototypes/ParticlesJS) - App that creates fire particles
+[CircuitsJS](https://adam077x.github.io/WebAppPrototypes/CircuitsJS/) - App that creates fire particles
