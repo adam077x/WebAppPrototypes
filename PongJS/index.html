@@ -1,0 +1,118 @@
+</DOCTYPE html>
+<html>
+    <title>Pong</title>
+
+    <body>
+        <canvas id="mainCanvas" width=640 height=480></canvas>
+
+        <script>
+            var canvas = document.getElementById("mainCanvas");
+            var ctx = canvas.getContext("2d");
+
+            var paddle1 = {
+                x: 10,
+                y: canvas.height / 2 - 62,
+                vel: 0
+            };
+
+            var paddle2 = {
+                x: canvas.width - 25,
+                y: canvas.height / 2 - 62,
+                vel: 0
+            };
+
+            var ball = {
+                x: canvas.width/2,
+                y: canvas.height/2,
+                vx: 3,
+                vy: 3,
+            };
+
+            window.onload = function() {
+                setInterval(game, 10);
+            }
+
+            function game() {
+                if(ball.x > paddle2.x && ball.y > paddle2.y && ball.y < paddle2.y + 125) {
+                    ball.vx *= -1;
+                }
+
+                if(ball.x < paddle1.x && ball.y > paddle1.y && ball.y < paddle1.y + 125) {
+                    ball.vx *= -1;
+                }
+
+                if(ball.y < 0) {
+                    ball.vy *= -1;
+                }
+                else if(ball.y > canvas.height) {
+                    ball.vy *= -1;
+                }
+
+                if(ball.x < 0) {
+                    ball.x = canvas.width/2;
+                    ball.y = canvas.height/2;
+                }
+                else if(ball.x > canvas.width) {
+                    ball.x = canvas.width/2;
+                    ball.y = canvas.height/2;
+                }
+
+                paddle1.y += paddle1.vel;
+                paddle2.y += paddle2.vel;
+
+                ball.x += ball.vx;
+                ball.y += ball.vy;
+
+                ctx.fillStyle = "#000";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.fillStyle = "#FFF";
+                ctx.fillRect(paddle1.x, paddle1.y, 15, 125);
+                ctx.fillRect(paddle2.x, paddle2.y, 15, 125);
+
+                ctx.beginPath();
+                ctx.ellipse(ball.x, ball.y, 10, 10, 0, 0, Math.PI*2);
+                ctx.fill();
+            }
+
+            document.addEventListener("keydown", (e) => {
+                if(e.key == "w") {
+                    paddle1.vel = -5;
+                }
+                else if(e.key == "s") {
+                    paddle1.vel = 5;
+                }
+
+                if(e.key == "w") {
+                    paddle1.vel = -5;
+                }
+                else if(e.key == "s") {
+                    paddle1.vel = 5;
+                }
+
+                if(e.key == "ArrowUp") {
+                    paddle2.vel = -5;
+                }
+                else if(e.key == "ArrowDown") {
+                    paddle2.vel = 5;
+                }
+            });
+
+            document.addEventListener("keyup", function(e) {
+                if(e.key == "w") {
+                    paddle1.vel = 0;
+                }
+                else if(e.key == "s") {
+                    paddle1.vel = 0;
+                }
+
+                if(e.key == "ArrowUp") {
+                    paddle2.vel = 0;
+                }
+                else if(e.key == "ArrowDown") {
+                    paddle2.vel = 0;
+                }
+            });
+        </script>
+    </body>
+</html>
