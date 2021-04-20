@@ -76,17 +76,10 @@
             }
 
             document.addEventListener("keydown", (e) => {
-                if(e.key == "w") {
+                if(e.key.toLowerCase() == "w") {
                     paddle1.vel = -5;
                 }
-                else if(e.key == "s") {
-                    paddle1.vel = 5;
-                }
-
-                if(e.key == "w") {
-                    paddle1.vel = -5;
-                }
-                else if(e.key == "s") {
+                else if(e.key.toLowerCase() == "s") {
                     paddle1.vel = 5;
                 }
 
@@ -99,10 +92,10 @@
             });
 
             document.addEventListener("keyup", function(e) {
-                if(e.key == "w") {
+                if(e.key.toLowerCase() == "w") {
                     paddle1.vel = 0;
                 }
-                else if(e.key == "s") {
+                else if(e.key.toLowerCase() == "s") {
                     paddle1.vel = 0;
                 }
 
