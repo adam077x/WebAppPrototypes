@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shooter</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <canvas id="gameCanvas"></canvas>
+        <script src="game.js"></script>
+
+        <div class="ui" id="startGame">
+            <h1>Shooter Game</h1>
+            <button type="button" class="btn btn-outline-success" id="btnStart" onclick="startGame()">Play Game!</button>
+            <p>This game is about <b>shooting enemy circles</b> using your <b>left mouse</b> button. You can move around the map using <b>WASD</b> on your keyboard. At the top of the screen you can see your score. </br>Enjoy the game!</p>
+        </div>
+
+        <div class="ui" id="stopGame">
+            <h1>Shooter Game</h1>
+            <button type="button" class="btn btn-outline-success" id="btnStop" onclick="restart()">Play Again!</button>
+            <h2 id="scoreEnd">Your score is </h2>
+        </div>
+    </body>
+</html>

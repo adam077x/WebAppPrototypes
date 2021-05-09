@@ -1,0 +1,45 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body .ui {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 10%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+body .ui h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+body .ui h2 {
+  text-align: center;
+}
+
+body .ui p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+body .ui button {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=styles.css.map */
