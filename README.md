@@ -6,4 +6,5 @@ Collection of small projects made in javascript, html, css...
 [MemoryGameJS](https://adam077x.github.io/WebAppPrototypes/MemoryGameJS) - Memory game where you have to memorize grid of squares\
 [ParticlesJS](https://adam077x.github.io/WebAppPrototypes/ParticlesJS) - App that creates fire particles\
 [CircuitsJS](https://adam077x.github.io/WebAppPrototypes/CircuitsJS/) - Simple circuits application. Not finished.\
-[PongJS](https://adam077x.github.io/WebAppPrototypes/PongJS/) - Pong clone
+[PongJS](https://adam077x.github.io/WebAppPrototypes/PongJS/) - Pong clone\
+[ShooterJS](https://adam077x.github.io/WebAppPrototypes/ShooterJS/) - Simple shooting game
