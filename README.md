@@ -7,5 +7,5 @@ Collection of small projects made in javascript, html, css...
 [ParticlesJS](https://adam077x.github.io/WebAppPrototypes/ParticlesJS) - App that creates fire particles\
 [CircuitsJS](https://adam077x.github.io/WebAppPrototypes/CircuitsJS/) - Simple circuits application. Not finished.\
 [PongJS](https://adam077x.github.io/WebAppPrototypes/PongJS/) - Pong clone\
-[ShooterJS](https://adam077x.github.io/WebAppPrototypes/ShooterJS/) - Simple shooting game
+[ShooterJS](https://adam077x.github.io/WebAppPrototypes/ShooterJS/) - Simple shooting game\
 [NotesApp](https://adam077x.github.io/WebAppPrototypes/notes-app/dist/) - This is notes application made in Vue.js
